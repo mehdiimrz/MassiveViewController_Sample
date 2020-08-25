@@ -23,6 +23,7 @@ final class HomeDogViewController: UIViewController {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .lightGray
+        tableView.dataSource = self
         tableView.rowHeight = 110
         tableView.register(HomeDogTableViewCell.self, forCellReuseIdentifier: "DogCell")
         return tableView
@@ -34,9 +35,11 @@ final class HomeDogViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        
         do {
             try dogsData = HomeDog.createHome()
+            setup()
+            
         } catch  {
             print("Error : \(error.localizedDescription)")
         }
@@ -54,3 +57,23 @@ extension HomeDogViewController{
         
     }
 }
+
+// MARK: TableView Datasource and Delegate
+extension HomeDogViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dogsData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DogCell", for: indexPath) as! HomeDogTableViewCell
+        cell.dogImage.image = UIImage(named: dogsData[indexPath.row].image)
+        cell.dogTitle.text = dogsData[indexPath.row].title
+        cell.accessoryType = .disclosureIndicator
+        
+        return cell
+    }
+    
+   
+    
+}
+

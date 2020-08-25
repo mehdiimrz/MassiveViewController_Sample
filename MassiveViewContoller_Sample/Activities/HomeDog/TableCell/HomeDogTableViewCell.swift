@@ -66,7 +66,7 @@ extension HomeDogTableViewCell {
         addSubview(dogTitle)
         dogTitle.topAnchor.constraint(equalTo: topAnchor).isActive = true
         dogTitle.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        dogTitle.leadingAnchor.constraint(equalTo: dogImage.leadingAnchor , constant: 5).isActive = true
+        dogTitle.leadingAnchor.constraint(equalTo: dogImage.trailingAnchor , constant: 5).isActive = true
         
     }
 }

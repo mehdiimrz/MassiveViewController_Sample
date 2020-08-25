@@ -19,6 +19,7 @@
 		AEB7E52424F555A400249779 /* HomeDogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52324F555A400249779 /* HomeDogTableViewCell.swift */; };
 		AEB7E52924F5A46200249779 /* HomeDogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52824F5A46200249779 /* HomeDogCollectionViewCell.swift */; };
 		AEB7E52B24F5ABBA00249779 /* DetailDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52A24F5ABBA00249779 /* DetailDog.swift */; };
+		AEB7E52D24F5ACDC00249779 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52C24F5ACDC00249779 /* Array+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		AEB7E52324F555A400249779 /* HomeDogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDogTableViewCell.swift; sourceTree = "<group>"; };
 		AEB7E52824F5A46200249779 /* HomeDogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDogCollectionViewCell.swift; sourceTree = "<group>"; };
 		AEB7E52A24F5ABBA00249779 /* DetailDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDog.swift; sourceTree = "<group>"; };
+		AEB7E52C24F5ACDC00249779 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				AEB7E51E24F5506D00249779 /* UIView+Extension.swift */,
+				AEB7E52C24F5ACDC00249779 /* Array+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB7E51F24F5506D00249779 /* UIView+Extension.swift in Sources */,
+				AEB7E52D24F5ACDC00249779 /* Array+Extension.swift in Sources */,
 				AEB7E52424F555A400249779 /* HomeDogTableViewCell.swift in Sources */,
 				AEB7E52B24F5ABBA00249779 /* DetailDog.swift in Sources */,
 				AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */,

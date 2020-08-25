@@ -16,6 +16,7 @@
 		AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E51624F54F4100249779 /* HomeDogViewController.swift */; };
 		AEB7E51A24F54FC300249779 /* HomeDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E51924F54FC300249779 /* HomeDog.swift */; };
 		AEB7E51F24F5506D00249779 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E51E24F5506D00249779 /* UIView+Extension.swift */; };
+		AEB7E52424F555A400249779 /* HomeDogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52324F555A400249779 /* HomeDogTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AEB7E51624F54F4100249779 /* HomeDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDogViewController.swift; sourceTree = "<group>"; };
 		AEB7E51924F54FC300249779 /* HomeDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDog.swift; sourceTree = "<group>"; };
 		AEB7E51E24F5506D00249779 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AEB7E52324F555A400249779 /* HomeDogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDogTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		AEB7E51524F54F1900249779 /* HomeDog */ = {
 			isa = PBXGroup;
 			children = (
+				AEB7E52224F5557400249779 /* TableCell */,
 				AEB7E51624F54F4100249779 /* HomeDogViewController.swift */,
 			);
 			path = HomeDog;
@@ -122,6 +125,14 @@
 				AEB7E51E24F5506D00249779 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEB7E52224F5557400249779 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				AEB7E52324F555A400249779 /* HomeDogTableViewCell.swift */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB7E51F24F5506D00249779 /* UIView+Extension.swift in Sources */,
+				AEB7E52424F555A400249779 /* HomeDogTableViewCell.swift in Sources */,
 				AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */,
 				AE83A26624F543DE00DC5FF1 /* ViewController.swift in Sources */,
 				AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */,

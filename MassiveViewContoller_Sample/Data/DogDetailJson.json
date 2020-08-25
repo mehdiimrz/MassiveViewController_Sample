@@ -1,0 +1,82 @@
+[{
+        "id" : 1,
+        "title": "Anatolian Shepherd Dog",
+        "desc": "The Anatolian Shepherd Dog is a native of Turkey, where they were bred as a shepherd’s companion and livestock guardian. They were created with specific traits to resemble the size and color of livestock they defended so predators wouldn’t detect them among the flock./n Sometimes called the Anatolian Karabash Dog or Kangal (which is considered a separate breed by many kennel clubs), they’re a fiercely loyal guard dog and a large, impressive dog breed, frequently weighing 120 to 150 pounds at maturity.Novice pet parents beware. Not only are dogs of this breed big; they’re generally known to be stubborn. Anatolian Shepherd Dogs require firm, consistent trainers with experience handling dogs. Also, be ready to clean up all the fur they shed throughout the year.A trained and well-socialized Anatolian Shepherd is a friend and guardian for anyone they consider to be their “flock,” which includes the human members of their family. They’re even friendly with their human children; although, their size makes it easy for them to knock over a kid during vigorous play. They may also chase other pets or animals if their humans don’t train them properly.Therefore, socialization and behavior training should start early on, ideally in puppyhood. If you’re willing to stay firm with training, you have the strength to handle a large pooch, and you’re willing to put in the time and dedication, then an Anatolian Shepherd Dog will be your friend and guardian for life.",
+        "image": "1",
+        "group" : "Working Dogs",
+        "height": "2 feet, 3 inches to 2 feet, 5 inches tall at the shoulder",
+        "weight" : "80 to 150 pounds",
+        "life_span": "11 to 13 years",
+        "cover_image" : "1-1"
+
+    },
+    {
+        "id" : 2,
+        "title": "American Hairless Terrier",
+        "desc": "The American Hairless Terrier is the only hairless dog breed indigenous to the United States, and the breed’s creation was something of a happy accident. Today, the breed is known as an active companion dog and an especially great choice for allergy sufferers.Some fans of the new breed abbreviate the name to AHT, while some refer to them as hairless Rat Terriers. Although these are purebred dogs, you may still find them in shelters and rescues. Remember to adopt! Don’t shop if this is the breed for you.Like all terriers, the American Hairless Terrier is a curious, spunky, and intelligent dog breed. They can thrive in larger family homes with kids or with active urban dwellers in apartments or condos. If you’re looking for a small dog who enjoys snuggling, being a goof, and alerting you to potential dangers, the American Hairless Terrier just might be the dog for you!DogTime recommends this carrier for traveling with your small American Hairless Terrier. You should also pick up this interactive puzzle toy to keep your pup active indoors!",
+        "image": "2",
+        "group" : "Terrier Dogs",
+        "height" : "12 to 16 inches",
+        "weight" : "10 to 16 pounds",
+        "life_span" : "13 to 16 years",
+        "cover_image" : "2-1"
+    },
+    {
+        "id" : 3,
+        "title": "American Foxhound",
+        "desc": "Easygoing, sweet, kind, and loyal, the American Foxhound dog breed belongs to a way of life that has continued for more than two centuries, but they have the potential to be a modern-day companion as well.Although they’re purebred dogs, you may find American Foxhounds in shelters or in the care of rescue groups. If this is the breed for you, opt to adopt if possible!The American Foxhound’s stamina and love of running make them great jogging partners for athletic pet parents, and their mild nature makes them excellent family dogs, so long as they get the exercise they crave. Although they’re low maintenance and affectionate pets, apartment dwellers and novice owners should beware. This breed’s energy and intensity mean that they need plenty of space to run and a commitment to lots of active play time.DogTime recommends this dog bed to give a good night’s sleep to your medium-sized American Foxhound. You should also pick up this dog water bottle for any outdoor adventures you have with your pup!",
+        "image": "3",
+        "group" : "Hound Dogs",
+        "height" : "21 to 25 inches tall at the shoulder",
+        "weight" : "40 to 60 pounds",
+        "life_span": "12 to 13 years",
+        "cover_image" : "3-1"
+
+    },
+    {
+        "id" : 4,
+        "title": "American Bulldog",
+        "desc": "The American Bulldog is stocky and muscular, but also agile and built for chasing down stray cattle and helping with farm work. In fact, some are known to jump six feet or more into the air.American Bulldogs are intelligent and affectionate, which makes them great, protective family dogs; although, they have high exercise needs and require an experienced, active pet parent. They can vary in appearance, as there are multiple types, including the Bully or Classic type, also known as the Johnson type, the Standard or Performance type, also called the Scott type, and hybrids of the two.With patient training and care, American Bulldogs can make loving family companions. If you’re looking for a loving, energetic best buddy, then this may be the dog for you!",
+        "image": "4",
+        "group": "Working Dogs",
+        "height" : "20 to 28 inches",
+        "weight" : "60 to 120 pounds",
+        "life_span" : "10 to 16 years",
+        "cover_image" : "4-1"
+
+    },
+    {
+        "id" : 5,
+        "title": "Cavapoo",
+        "desc": "The Cavapoo is a mixed breed dog — a cross between the Cavalier King Charles Spaniel and Poodle dog breeds. Outgoing, playful, and curious, these pups inherit some of the best traits from both of their parents.Cavapoos go by several names, including Cavadoodle and Cavoodle. Despite their unfortunate status as a designer breed, you can find these mixed breed dogs in shelters and rescues, so remember to adopt! Don’t shop!These adorable pups make amazing family pets, as they’re outgoing and adore attention. While they can work in smaller settings, they definitely thrive in a “pack” setting. If you want a loyal, playful dog who enjoys romping around with you or snuggling on the couch, the Cavapoo may be the dog for you!",
+        "image": "5",
+        "group" : "Mixed Breed Dogs",
+        "height": "9 to 14 inches",
+        "weight": "9 to 25 pounds",
+        "life_span": "12 to 15 years",
+        "cover_image" : "5-1"
+    },
+    {
+        "id" : 6,
+        "title": "Boxer",
+        "desc": "Boxer dogs were originally bred to be medium-size guard dogs. Today, although they are a part of the AKC’s Working Group, Boxers mostly find homes as loving family companions. That said, they still retain their high energy levels and need plenty of exercise.Square-jawed and muscular, this breed is the George Clooney of the dog world–a looker with a sense of humor and an underlying sweetness. They adore their families and will also appreciate consistent training that doesn’t rely on harsh reprimands.If you’re looking for a high-energy, easy-to-groom, family-friendly pooch, then this just may be the breed for you!DogTime recommends this dog bed to give a good night’s sleep to your medium-sized Boxer. You should also pick up this dog fetch toy to help burn off your pup’s high energy!",
+        "image": "6",
+        "group": "Working Dogs",
+        "height" : "21 to 25 inches at the shoulder",
+        "weight":  "60 to 70 pounds",
+        "life_span" : "10 to 12 years",
+        "cover_image" : "6-1"
+
+    },
+    {
+        "id" : 7,
+        "title": "Dogo Argentino",
+        "desc": "The Dogo Argentino, sometimes called the Argentinian Mastiff or the Argentine Dogo, is a strong, athletic, and loyal breed. They can be both fierce hunters and gentle protectors of their humans. They have a high prey drive, a strong will, and, at times, a distrust of strangers and other animals, all of which require an experienced dog owner to handle the breed.Dogo Argentino puppies need lots of physical activity and mental stimulation along with patient training; otherwise, they can become bored and destructive. Dogo Argentinos are often used to help with big-game hunting, though they are also trained for police work, search and rescue, military work, and as service dogs.With proper training, they can make an awesome family companion and watchdog.",
+        "image": "7",
+        "group": "Sporting Dogs",
+        "height" : "23 to 27 inches",
+        "weight":"80 to 100 pounds",
+        "life_span" : "9 to 15 years",
+        "cover_image" : "7-1"
+    }
+]

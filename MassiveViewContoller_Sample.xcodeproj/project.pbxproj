@@ -17,6 +17,7 @@
 		AEB7E51A24F54FC300249779 /* HomeDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E51924F54FC300249779 /* HomeDog.swift */; };
 		AEB7E51F24F5506D00249779 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E51E24F5506D00249779 /* UIView+Extension.swift */; };
 		AEB7E52424F555A400249779 /* HomeDogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52324F555A400249779 /* HomeDogTableViewCell.swift */; };
+		AEB7E52924F5A46200249779 /* HomeDogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52824F5A46200249779 /* HomeDogCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AEB7E51924F54FC300249779 /* HomeDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDog.swift; sourceTree = "<group>"; };
 		AEB7E51E24F5506D00249779 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		AEB7E52324F555A400249779 /* HomeDogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDogTableViewCell.swift; sourceTree = "<group>"; };
+		AEB7E52824F5A46200249779 /* HomeDogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDogCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		AEB7E51524F54F1900249779 /* HomeDog */ = {
 			isa = PBXGroup;
 			children = (
+				AEB7E52724F5A44100249779 /* CollectionCell */,
 				AEB7E52224F5557400249779 /* TableCell */,
 				AEB7E51624F54F4100249779 /* HomeDogViewController.swift */,
 			);
@@ -133,6 +136,14 @@
 				AEB7E52324F555A400249779 /* HomeDogTableViewCell.swift */,
 			);
 			path = TableCell;
+			sourceTree = "<group>";
+		};
+		AEB7E52724F5A44100249779 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				AEB7E52824F5A46200249779 /* HomeDogCollectionViewCell.swift */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 				AEB7E52424F555A400249779 /* HomeDogTableViewCell.swift in Sources */,
 				AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */,
 				AE83A26624F543DE00DC5FF1 /* ViewController.swift in Sources */,
+				AEB7E52924F5A46200249779 /* HomeDogCollectionViewCell.swift in Sources */,
 				AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */,
 				AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */,
 				AEB7E51A24F54FC300249779 /* HomeDog.swift in Sources */,

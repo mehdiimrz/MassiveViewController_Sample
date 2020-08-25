@@ -13,6 +13,7 @@
 		AE83A26B24F543E400DC5FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE83A26A24F543E400DC5FF1 /* Assets.xcassets */; };
 		AE83A26E24F543E400DC5FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE83A26C24F543E400DC5FF1 /* LaunchScreen.storyboard */; };
 		AEB7E51324F54DCB00249779 /* DogHomeJson.json in Resources */ = {isa = PBXBuildFile; fileRef = AEB7E51224F54DCB00249779 /* DogHomeJson.json */; };
+		AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E51624F54F4100249779 /* HomeDogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AE83A26D24F543E400DC5FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE83A26F24F543E400DC5FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB7E51224F54DCB00249779 /* DogHomeJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DogHomeJson.json; sourceTree = "<group>"; };
+		AEB7E51624F54F4100249779 /* HomeDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		AE83A26024F543DE00DC5FF1 /* MassiveViewContoller_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				AEB7E51424F54F0400249779 /* Activities */,
 				AEB7E51124F54DA600249779 /* Data */,
 				AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */,
 				AE83A26324F543DE00DC5FF1 /* SceneDelegate.swift */,
@@ -73,6 +76,22 @@
 				AEB7E51224F54DCB00249779 /* DogHomeJson.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		AEB7E51424F54F0400249779 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				AEB7E51524F54F1900249779 /* HomeDog */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		AEB7E51524F54F1900249779 /* HomeDog */ = {
+			isa = PBXGroup;
+			children = (
+				AEB7E51624F54F4100249779 /* HomeDogViewController.swift */,
+			);
+			path = HomeDog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */,
 				AE83A26624F543DE00DC5FF1 /* ViewController.swift in Sources */,
 				AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */,
 				AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */,

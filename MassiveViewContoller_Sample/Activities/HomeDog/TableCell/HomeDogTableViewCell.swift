@@ -31,6 +31,8 @@ final class HomeDogTableViewCell: UITableViewCell {
         
         let dogLable = UILabel()
         dogLable.font = UIFont(name: "Chalkduster", size: 18)
+        dogLable.adjustsFontSizeToFitWidth = true
+        dogLable.minimumScaleFactor = 0.5
         dogLable.translatesAutoresizingMaskIntoConstraints = false
         return dogLable
     }()
@@ -67,6 +69,7 @@ extension HomeDogTableViewCell {
         dogTitle.topAnchor.constraint(equalTo: topAnchor).isActive = true
         dogTitle.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         dogTitle.leadingAnchor.constraint(equalTo: dogImage.trailingAnchor , constant: 5).isActive = true
+        dogTitle.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
     }
 }

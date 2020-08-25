@@ -57,5 +57,15 @@ struct DetailDog : Decodable,Identifiable{
         }
     }
     
+    // Return N random dogs
+    static func findRandomDogs(count : Int) throws -> [DetailDog]{
+           do{
+               let dogs = try self.dogsDetails()
+               return dogs.pick(count)
+               
+           } catch{
+               throw error
+           }
+       }
 }
 

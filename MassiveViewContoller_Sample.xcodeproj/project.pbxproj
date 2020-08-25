@@ -14,6 +14,7 @@
 		AE83A26E24F543E400DC5FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE83A26C24F543E400DC5FF1 /* LaunchScreen.storyboard */; };
 		AEB7E51324F54DCB00249779 /* DogHomeJson.json in Resources */ = {isa = PBXBuildFile; fileRef = AEB7E51224F54DCB00249779 /* DogHomeJson.json */; };
 		AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E51624F54F4100249779 /* HomeDogViewController.swift */; };
+		AEB7E51A24F54FC300249779 /* HomeDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E51924F54FC300249779 /* HomeDog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AE83A26F24F543E400DC5FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB7E51224F54DCB00249779 /* DogHomeJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DogHomeJson.json; sourceTree = "<group>"; };
 		AEB7E51624F54F4100249779 /* HomeDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDogViewController.swift; sourceTree = "<group>"; };
+		AEB7E51924F54FC300249779 /* HomeDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		AE83A26024F543DE00DC5FF1 /* MassiveViewContoller_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				AEB7E51824F54FAE00249779 /* Model */,
 				AEB7E51424F54F0400249779 /* Activities */,
 				AEB7E51124F54DA600249779 /* Data */,
 				AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */,
@@ -92,6 +95,14 @@
 				AEB7E51624F54F4100249779 /* HomeDogViewController.swift */,
 			);
 			path = HomeDog;
+			sourceTree = "<group>";
+		};
+		AEB7E51824F54FAE00249779 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEB7E51924F54FC300249779 /* HomeDog.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				AE83A26624F543DE00DC5FF1 /* ViewController.swift in Sources */,
 				AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */,
 				AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */,
+				AEB7E51A24F54FC300249779 /* HomeDog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

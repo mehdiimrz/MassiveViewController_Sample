@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeDogViewController: UIViewController {
+final class HomeDogViewController: UIViewController {
     
     // MARK: Properties
     

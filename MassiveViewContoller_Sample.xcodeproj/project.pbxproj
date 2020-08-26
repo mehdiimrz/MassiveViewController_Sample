@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */; };
 		AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A26324F543DE00DC5FF1 /* SceneDelegate.swift */; };
-		AE83A26624F543DE00DC5FF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A26524F543DE00DC5FF1 /* ViewController.swift */; };
 		AE83A26B24F543E400DC5FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE83A26A24F543E400DC5FF1 /* Assets.xcassets */; };
 		AE83A26E24F543E400DC5FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE83A26C24F543E400DC5FF1 /* LaunchScreen.storyboard */; };
 		AEB7E51324F54DCB00249779 /* DogHomeJson.json in Resources */ = {isa = PBXBuildFile; fileRef = AEB7E51224F54DCB00249779 /* DogHomeJson.json */; };
@@ -31,7 +30,6 @@
 		AE83A25E24F543DE00DC5FF1 /* MassiveViewContoller_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassiveViewContoller_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE83A26324F543DE00DC5FF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE83A26524F543DE00DC5FF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE83A26A24F543E400DC5FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE83A26D24F543E400DC5FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE83A26F24F543E400DC5FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,18 +78,14 @@
 		AE83A26024F543DE00DC5FF1 /* MassiveViewContoller_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				AEEB183924F6965D0024DFCA /* Resources */,
+				AEEB183824F6964A0024DFCA /* DataProvider */,
 				AEB7E51B24F5502A00249779 /* Helper */,
 				AEB7E51824F54FAE00249779 /* Model */,
 				AEB7E51424F54F0400249779 /* Activities */,
-				AEB7E51124F54DA600249779 /* Data */,
 				AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */,
 				AE83A26324F543DE00DC5FF1 /* SceneDelegate.swift */,
-				AE83A26524F543DE00DC5FF1 /* ViewController.swift */,
-				AE83A26A24F543E400DC5FF1 /* Assets.xcassets */,
-				AE83A26C24F543E400DC5FF1 /* LaunchScreen.storyboard */,
 				AE83A26F24F543E400DC5FF1 /* Info.plist */,
-				AEB7E53824F6838400249779 /* DataProvider.swift */,
-				AEB7E53C24F6846E00249779 /* MockDataProvider.swift */,
 			);
 			path = MassiveViewContoller_Sample;
 			sourceTree = "<group>";
@@ -175,6 +169,25 @@
 			path = DetailDog;
 			sourceTree = "<group>";
 		};
+		AEEB183824F6964A0024DFCA /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				AEB7E51124F54DA600249779 /* Data */,
+				AEB7E53824F6838400249779 /* DataProvider.swift */,
+				AEB7E53C24F6846E00249779 /* MockDataProvider.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		AEEB183924F6965D0024DFCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE83A26A24F543E400DC5FF1 /* Assets.xcassets */,
+				AE83A26C24F543E400DC5FF1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,7 +267,6 @@
 				AEB7E52424F555A400249779 /* HomeDogTableViewCell.swift in Sources */,
 				AEB7E52B24F5ABBA00249779 /* DetailDog.swift in Sources */,
 				AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */,
-				AE83A26624F543DE00DC5FF1 /* ViewController.swift in Sources */,
 				AEB7E52924F5A46200249779 /* HomeDogCollectionViewCell.swift in Sources */,
 				AEB7E53424F64A7F00249779 /* UILabel+Extension.swift in Sources */,
 				AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */,

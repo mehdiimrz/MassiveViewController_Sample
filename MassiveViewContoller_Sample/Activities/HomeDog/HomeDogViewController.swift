@@ -55,20 +55,16 @@ final class HomeDogViewController: UIViewController {
     }()
     
     
-    
+    private let dataProvider = MockDataProvider()
     // MARK: View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        do {
-            try dogsData = HomeDog.createHome()
-            try bannerDogs = DetailDog.findRandomDogs(count: 3)
-            setup()
-            
-        } catch  {
-            print("Error : \(error.localizedDescription)")
-        }
+        dogsData = dataProvider.getHomeDogs()
+        bannerDogs = dataProvider.getDetailDogs()
+                               .findRndom(count: 3)
+        setup()
     }
 }
 

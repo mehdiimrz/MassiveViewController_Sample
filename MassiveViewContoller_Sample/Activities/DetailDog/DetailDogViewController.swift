@@ -15,7 +15,8 @@ final class DetailDogViewController: UIViewController {
     let dog : DetailDog
     
     init(dogId : Int){
-        self.dog = try! DetailDog.findDetail(dogId: dogId)
+        self.dog = dataProvider.getDetailDogs()
+                               .findDogWithId(dogId: dogId)!
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -24,7 +25,8 @@ final class DetailDogViewController: UIViewController {
     }
     
     // MARK: Properties
-
+    let dataProvider = MockDataProvider()
+    
     lazy var closeButton : UIButton = {
           
            let closeBtn = UIButton(type: UIButton.ButtonType.custom)

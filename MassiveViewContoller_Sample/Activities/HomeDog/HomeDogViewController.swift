@@ -106,6 +106,7 @@ extension HomeDogViewController : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let dogVc = DetailDogViewController(dogId: dogsData[indexPath.row].id)
         self.present(dogVc, animated: true, completion: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
    
     

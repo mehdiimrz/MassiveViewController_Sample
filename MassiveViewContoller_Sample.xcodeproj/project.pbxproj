@@ -21,6 +21,7 @@
 		AEB7E52B24F5ABBA00249779 /* DetailDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52A24F5ABBA00249779 /* DetailDog.swift */; };
 		AEB7E52D24F5ACDC00249779 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E52C24F5ACDC00249779 /* Array+Extension.swift */; };
 		AEB7E52F24F5AD8800249779 /* DogDetailJson.json in Resources */ = {isa = PBXBuildFile; fileRef = AEB7E52E24F5AD8800249779 /* DogDetailJson.json */; };
+		AEB7E53424F64A7F00249779 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E53324F64A7F00249779 /* UILabel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AEB7E52A24F5ABBA00249779 /* DetailDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDog.swift; sourceTree = "<group>"; };
 		AEB7E52C24F5ACDC00249779 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		AEB7E52E24F5AD8800249779 /* DogDetailJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DogDetailJson.json; sourceTree = "<group>"; };
+		AEB7E53324F64A7F00249779 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				AEB7E51E24F5506D00249779 /* UIView+Extension.swift */,
 				AEB7E52C24F5ACDC00249779 /* Array+Extension.swift */,
+				AEB7E53324F64A7F00249779 /* UILabel+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */,
 				AE83A26624F543DE00DC5FF1 /* ViewController.swift in Sources */,
 				AEB7E52924F5A46200249779 /* HomeDogCollectionViewCell.swift in Sources */,
+				AEB7E53424F64A7F00249779 /* UILabel+Extension.swift in Sources */,
 				AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */,
 				AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */,
 				AEB7E51A24F54FC300249779 /* HomeDog.swift in Sources */,

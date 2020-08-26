@@ -59,6 +59,7 @@ final class DetailDogViewController: UIViewController {
            let dogLable = UILabel()
            dogLable.numberOfLines = 0
            dogLable.font = UIFont(name: "Futura-Medium", size: 18)
+           dogLable.backgroundColor = UIColor(named: "LabelColor")
            dogLable.text = dog.desc
            dogLable.setLineHeight(lineHeight: 1.5)
            dogLable.translatesAutoresizingMaskIntoConstraints = false
@@ -95,6 +96,8 @@ final class DetailDogViewController: UIViewController {
 // MARK: Helper
 extension DetailDogViewController {
     private func setupView(){
+        
+        self.title = self.dog.title
         
         view.backgroundColor = .white
         

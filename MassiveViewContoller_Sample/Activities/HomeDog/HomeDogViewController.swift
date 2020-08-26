@@ -28,7 +28,7 @@ final class HomeDogViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: view.frame.width , height: 200)
+        layout.itemSize = CGSize(width: view.frame.width , height: 350)
         layout.minimumLineSpacing = 0
         let collection = UICollectionView(frame : .zero ,collectionViewLayout: layout)
         
@@ -73,10 +73,11 @@ extension HomeDogViewController{
     
     private func setup(){
         
+        self.title = "Breeds"
         
         //CollectionView
         view.addSubview(dogCollection)
-        dogCollection.constrainTop(to: view, withHeight: 200)
+        dogCollection.constrainTop(to: view, withHeight: 350)
         
         // TableView
         view.addSubview(dogsTable)
@@ -104,7 +105,7 @@ extension HomeDogViewController : UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let dogVc = DetailDogViewController(dogId: dogsData[indexPath.row].id)
-        present(dogVc, animated: true, completion: nil)
+        self.present(dogVc, animated: true, completion: nil)
     }
    
     
@@ -124,7 +125,7 @@ extension HomeDogViewController : UICollectionViewDataSource,UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let dogVc = DetailDogViewController(dogId: bannerDogs[indexPath.row].id)
-        present(dogVc, animated: true, completion: nil)
+        self.present(dogVc, animated: true, completion: nil)
     }
     
 }

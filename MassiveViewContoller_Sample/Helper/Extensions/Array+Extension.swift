@@ -9,6 +9,13 @@
 import Foundation
 
 extension Array {
+    
+    /**
+    Return random element of array
+
+    - Parameters:
+       - n: Number of random Element
+    */
     func pick(_ n: Int) -> [Element] {
         guard count >= n else {
             fatalError("The count has to be at least \(n)")

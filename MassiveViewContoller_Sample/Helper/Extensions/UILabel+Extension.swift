@@ -10,6 +10,12 @@ import Foundation
 import UIKit
 
 extension UILabel {
+    /**
+    Change line height of Label
+
+    - Parameters:
+       - lineHeight: line height
+    */
     func setLineHeight(lineHeight: CGFloat) {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 1.0

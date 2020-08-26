@@ -11,7 +11,14 @@ import UIKit
 
 extension UIView {
     
-    // Constraint view to Edges
+    /**
+    Activate constraint to edges.
+
+    - Parameters:
+       - view: Container view
+
+    - Returns: Activated constraints
+    */
     @discardableResult
     public func constrainEdges(to view: UIView) -> [NSLayoutConstraint] {
         let constraints = [
@@ -25,7 +32,15 @@ extension UIView {
     }
     
     
-    // Constraint view to The top with defined height
+    /**
+    Activate constraint to the top with specific height.
+
+    - Parameters:
+       - view: Container view
+       - height: Height of the view
+
+    - Returns: Activated constraints
+    */
     @discardableResult
     public func constrainTop(to view: UIView , withHeight height : CGFloat) -> [NSLayoutConstraint] {
         let constraints = [
@@ -38,7 +53,15 @@ extension UIView {
         return constraints
     }
     
-    // Constraint top of the view to The top with given height
+    /**
+    Activate constraint to the top with given view.
+
+    - Parameters:
+       - view: Container view
+       - topView: Top view to stick
+
+    - Returns: Activated constraints
+    */
     @discardableResult
     public func constrainTop(to view: UIView , toTopView topView : UIView) -> [NSLayoutConstraint] {
         let constraints = [

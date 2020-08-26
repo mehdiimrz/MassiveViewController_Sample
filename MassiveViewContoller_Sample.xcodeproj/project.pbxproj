@@ -24,6 +24,7 @@
 		AEB7E53724F64B0000249779 /* DetailDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E53624F64B0000249779 /* DetailDogViewController.swift */; };
 		AEB7E53924F6838400249779 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E53824F6838400249779 /* DataProvider.swift */; };
 		AEB7E53D24F6846E00249779 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E53C24F6846E00249779 /* MockDataProvider.swift */; };
+		AEEB183C24F6984D0024DFCA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB183B24F6984D0024DFCA /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AEB7E53624F64B0000249779 /* DetailDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDogViewController.swift; sourceTree = "<group>"; };
 		AEB7E53824F6838400249779 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		AEB7E53C24F6846E00249779 /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
+		AEEB183B24F6984D0024DFCA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		AEB7E51B24F5502A00249779 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				AEEB183A24F6983E0024DFCA /* Coordinator */,
 				AEB7E52024F550CB00249779 /* Extensions */,
 			);
 			path = Helper;
@@ -186,6 +189,14 @@
 				AE83A26C24F543E400DC5FF1 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEEB183A24F6983E0024DFCA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AEEB183B24F6984D0024DFCA /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				AEB7E52D24F5ACDC00249779 /* Array+Extension.swift in Sources */,
 				AEB7E52424F555A400249779 /* HomeDogTableViewCell.swift in Sources */,
 				AEB7E52B24F5ABBA00249779 /* DetailDog.swift in Sources */,
+				AEEB183C24F6984D0024DFCA /* Coordinator.swift in Sources */,
 				AEB7E51724F54F4100249779 /* HomeDogViewController.swift in Sources */,
 				AEB7E52924F5A46200249779 /* HomeDogCollectionViewCell.swift in Sources */,
 				AEB7E53424F64A7F00249779 /* UILabel+Extension.swift in Sources */,

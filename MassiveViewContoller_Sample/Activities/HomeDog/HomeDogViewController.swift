@@ -18,6 +18,29 @@ final class HomeDogViewController: UIViewController {
         }
     }
     
+    private var bannerDogs = [DetailDog](){
+        didSet{
+            dogCollection.reloadData()
+        }
+    }
+    
+    private lazy var dogCollection : UICollectionView = {
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: view.frame.width , height: 200)
+        layout.minimumLineSpacing = 0
+        let collection = UICollectionView(frame : .zero ,collectionViewLayout: layout)
+        
+        collection.translatesAutoresizingMaskIntoConstraints = false
+        collection.dataSource = self
+        collection.isPagingEnabled = true
+        collection.register(HomeDogCollectionViewCell.self, forCellWithReuseIdentifier: "FeatureCell")
+        view.addSubview(collection)
+        return collection
+    }()
+    
+    
     private lazy var dogsTable : UITableView = {
         
         let tableView = UITableView()
@@ -38,6 +61,7 @@ final class HomeDogViewController: UIViewController {
         
         do {
             try dogsData = HomeDog.createHome()
+            try bannerDogs = DetailDog.findRandomDogs(count: 3)
             setup()
             
         } catch  {
@@ -51,9 +75,16 @@ extension HomeDogViewController{
     
     private func setup(){
         
+        
+        //CollectionView
+        view.addSubview(dogCollection)
+        dogCollection.constrainTop(to: view, withHeight: 200)
+        
         // TableView
         view.addSubview(dogsTable)
-        dogsTable.constrainEdges(to: view)
+        dogsTable.constrainTop(to: view, toTopView: dogCollection)
+        
+        
         
     }
 }
@@ -77,3 +108,16 @@ extension HomeDogViewController : UITableViewDataSource{
     
 }
 
+// MARK: CollectionView Datasource and Delegate
+extension HomeDogViewController : UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return bannerDogs.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureCell", for: indexPath) as! HomeDogCollectionViewCell
+        cell.imageView.image = UIImage(named: bannerDogs[indexPath.row].coverImage)
+        return cell
+    }
+    
+}

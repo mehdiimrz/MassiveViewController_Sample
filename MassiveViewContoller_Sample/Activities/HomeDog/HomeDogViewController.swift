@@ -34,6 +34,7 @@ final class HomeDogViewController: UIViewController {
         
         collection.translatesAutoresizingMaskIntoConstraints = false
         collection.dataSource = self
+        collection.delegate = self
         collection.isPagingEnabled = true
         collection.register(HomeDogCollectionViewCell.self, forCellWithReuseIdentifier: "FeatureCell")
         view.addSubview(collection)
@@ -47,6 +48,7 @@ final class HomeDogViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .lightGray
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.rowHeight = 110
         tableView.register(HomeDogTableViewCell.self, forCellReuseIdentifier: "DogCell")
         return tableView
@@ -90,7 +92,7 @@ extension HomeDogViewController{
 }
 
 // MARK: TableView Datasource and Delegate
-extension HomeDogViewController : UITableViewDataSource{
+extension HomeDogViewController : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dogsData.count
     }
@@ -104,12 +106,16 @@ extension HomeDogViewController : UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dogVc = DetailDogViewController(dogId: dogsData[indexPath.row].id)
+        present(dogVc, animated: true, completion: nil)
+    }
    
     
 }
 
 // MARK: CollectionView Datasource and Delegate
-extension HomeDogViewController : UICollectionViewDataSource{
+extension HomeDogViewController : UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return bannerDogs.count
     }
@@ -118,6 +124,11 @@ extension HomeDogViewController : UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureCell", for: indexPath) as! HomeDogCollectionViewCell
         cell.imageView.image = UIImage(named: bannerDogs[indexPath.row].coverImage)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let dogVc = DetailDogViewController(dogId: bannerDogs[indexPath.row].id)
+        present(dogVc, animated: true, completion: nil)
     }
     
 }

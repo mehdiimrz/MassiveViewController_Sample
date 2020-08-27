@@ -13,7 +13,13 @@ final class DogsBannerViewController: UIViewController {
     
     // MARK: Properties
     
-    weak var coordinator : HomeDogCoordinator?
+    weak var coordinator : HomeDogCoordinator?{
+        didSet{
+            dataSource.coordinator = coordinator
+        }
+    }
+    
+    private var dataSource : DogsCollectionDataSource
     
     private var banners = [DetailDog](){
         didSet{
@@ -30,8 +36,8 @@ final class DogsBannerViewController: UIViewController {
         let collection = UICollectionView(frame : .zero ,collectionViewLayout: layout)
         
         collection.translatesAutoresizingMaskIntoConstraints = false
-        collection.dataSource = self
-        collection.delegate = self
+        collection.dataSource = dataSource
+        collection.delegate = dataSource
         collection.isPagingEnabled = true
         collection.register(HomeDogCollectionViewCell.self, forCellWithReuseIdentifier: "FeatureCell")
         view.addSubview(collection)
@@ -40,6 +46,7 @@ final class DogsBannerViewController: UIViewController {
     
     init(banners : [DetailDog]){
         self.banners = banners
+        self.dataSource = DogsCollectionDataSource(dogs: banners)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -69,20 +76,3 @@ extension DogsBannerViewController{
     
 }
 
-// MARK: CollectionView Datasource and Delegate
-extension DogsBannerViewController : UICollectionViewDataSource,UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return banners.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureCell", for: indexPath) as! HomeDogCollectionViewCell
-        cell.imageView.image = UIImage(named: banners[indexPath.row].coverImage)
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        coordinator?.presentDogDetail(id: banners[indexPath.row].id)
-    }
-    
-}

@@ -31,7 +31,7 @@ final class DogsBannerViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: view.frame.width , height: 350)
+        layout.itemSize = CGSize(width: view.frame.width , height: 250)
         layout.minimumLineSpacing = 0
         let collection = UICollectionView(frame : .zero ,collectionViewLayout: layout)
         

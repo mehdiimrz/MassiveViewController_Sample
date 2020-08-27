@@ -20,14 +20,20 @@ class DogsListViewController: UIViewController {
         }
     }
     
-    weak var coordinator : HomeDogCoordinator?
+    weak var coordinator : HomeDogCoordinator?{
+        didSet{
+            dataSource.coordinator = coordinator
+        }
+    }
+    
+    private let dataSource : DogsTableDataSource
     
     private lazy var dogsTable : UITableView = {
         
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView.dataSource = dataSource
+        tableView.delegate = dataSource
         tableView.backgroundColor = .lightGray
         
         tableView.rowHeight = 110
@@ -40,6 +46,7 @@ class DogsListViewController: UIViewController {
     
     init(dogs : [HomeDog]){
         self.dogs = dogs
+        self.dataSource = DogsTableDataSource(dogs: dogs)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -63,27 +70,4 @@ class DogsListViewController: UIViewController {
         dogsTable.constrainEdges(to: view)        
     }
     
-}
-
-// MARK: TableView Datasource and Delegate
-extension DogsListViewController : UITableViewDataSource,UITableViewDelegate{
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dogs.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DogCell", for: indexPath) as! HomeDogTableViewCell
-        cell.dogImage.image = UIImage(named: dogs[indexPath.row].image)
-        cell.dogTitle.text = dogs[indexPath.row].title
-        cell.accessoryType = .disclosureIndicator
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        coordinator?.presentDogDetail(id: dogs[indexPath.row].id)
-    }
 }

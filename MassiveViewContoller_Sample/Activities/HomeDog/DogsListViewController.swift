@@ -60,11 +60,7 @@ class DogsListViewController: UIViewController {
     private func setupViews(){
         // TableView
         view.addSubview(dogsTable)
-        dogsTable.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        dogsTable.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        dogsTable.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        dogsTable.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
+        dogsTable.constrainEdges(to: view)        
     }
     
 }

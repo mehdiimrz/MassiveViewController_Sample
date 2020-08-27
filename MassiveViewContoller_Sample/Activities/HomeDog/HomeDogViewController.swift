@@ -21,6 +21,7 @@ final class HomeDogViewController: UIViewController {
     private lazy var dogsBanner : DogsBannerViewController = {
        
         let dogBannerVC = DogsBannerViewController(banners: self.bannerDogs)
+        dogBannerVC.coordinator = self.coordinator
         add(dogBannerVC)
         return dogBannerVC
     }()
@@ -28,6 +29,7 @@ final class HomeDogViewController: UIViewController {
     private lazy var dogsList : DogsListViewController = {
        
         let dogListVC = DogsListViewController(dogs: self.dogsData)
+        dogListVC.coordinator = self.coordinator
         add(dogListVC)
         return dogListVC
     }()

@@ -34,36 +34,6 @@ final class HomeDogViewController: UIViewController {
         return dogListVC
     }()
     
-    private lazy var dogCollection : UICollectionView = {
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: view.frame.width , height: 350)
-        layout.minimumLineSpacing = 0
-        let collection = UICollectionView(frame : .zero ,collectionViewLayout: layout)
-        
-        collection.translatesAutoresizingMaskIntoConstraints = false
-        collection.dataSource = self
-        collection.delegate = self
-        collection.isPagingEnabled = true
-        collection.register(HomeDogCollectionViewCell.self, forCellWithReuseIdentifier: "FeatureCell")
-        view.addSubview(collection)
-        return collection
-    }()
-    
-    
-    private lazy var dogsTable : UITableView = {
-        
-        let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = .lightGray
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.rowHeight = 110
-        tableView.register(HomeDogTableViewCell.self, forCellReuseIdentifier: "DogCell")
-        return tableView
-    }()
-    
     
     private let dataProvider = MockDataProvider()
     // MARK: View Life Cycle
@@ -85,58 +55,13 @@ extension HomeDogViewController{
         
         self.title = "Breeds"
         
-        //CollectionView
-        view.addSubview(dogCollection)
-        dogCollection.constrainTop(to: view, withHeight: 350)
+        // DogsBanner Child View Controller
+        dogsBanner.view.constrainTop(to: view, withHeight: 400)
         
-        // TableView
-        view.addSubview(dogsTable)
-        dogsTable.constrainTop(to: view, toTopView: dogCollection)
+        // DogsList Child View Controller
+        dogsList.view.constrainTop(to: view, toTopView: dogsBanner.view)
         
         
         
     }
-}
-
-// MARK: TableView Datasource and Delegate
-extension HomeDogViewController : UITableViewDataSource,UITableViewDelegate{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dogsData.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DogCell", for: indexPath) as! HomeDogTableViewCell
-        cell.dogImage.image = UIImage(named: dogsData[indexPath.row].image)
-        cell.dogTitle.text = dogsData[indexPath.row].title
-        cell.accessoryType = .disclosureIndicator
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dogVc = DetailDogViewController(dogId: dogsData[indexPath.row].id)
-        self.present(dogVc, animated: true, completion: nil)
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-   
-    
-}
-
-// MARK: CollectionView Datasource and Delegate
-extension HomeDogViewController : UICollectionViewDataSource,UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return bannerDogs.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureCell", for: indexPath) as! HomeDogCollectionViewCell
-        cell.imageView.image = UIImage(named: bannerDogs[indexPath.row].coverImage)
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let dogVc = DetailDogViewController(dogId: bannerDogs[indexPath.row].id)
-        self.present(dogVc, animated: true, completion: nil)
-    }
-    
 }

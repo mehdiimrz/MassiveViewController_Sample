@@ -20,6 +20,7 @@ final class HomeDogCoordinator : Coordinator{
     
     func start() {
         let vc = HomeDogViewController()
+        vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
     

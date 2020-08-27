@@ -26,6 +26,7 @@
 		AEB7E53D24F6846E00249779 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB7E53C24F6846E00249779 /* MockDataProvider.swift */; };
 		AEEB183C24F6984D0024DFCA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB183B24F6984D0024DFCA /* Coordinator.swift */; };
 		AEEB183E24F698AC0024DFCA /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB183D24F698AC0024DFCA /* ApplicationCoordinator.swift */; };
+		AEEB184024F699940024DFCA /* DogsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB183F24F699940024DFCA /* DogsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		AEB7E53C24F6846E00249779 /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
 		AEEB183B24F6984D0024DFCA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AEEB183D24F698AC0024DFCA /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		AEEB183F24F699940024DFCA /* DogsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		AEB7E51524F54F1900249779 /* HomeDog */ = {
 			isa = PBXGroup;
 			children = (
+				AEEB183F24F699940024DFCA /* DogsListViewController.swift */,
 				AEB7E52724F5A44100249779 /* CollectionCell */,
 				AEB7E52224F5557400249779 /* TableCell */,
 				AEB7E51624F54F4100249779 /* HomeDogViewController.swift */,
@@ -289,6 +292,7 @@
 				AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */,
 				AEB7E51A24F54FC300249779 /* HomeDog.swift in Sources */,
 				AEB7E53924F6838400249779 /* DataProvider.swift in Sources */,
+				AEEB184024F699940024DFCA /* DogsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

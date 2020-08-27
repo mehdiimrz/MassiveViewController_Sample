@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2A8AAC24F800C7008B33F4 /* DogsBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8AAB24F800C7008B33F4 /* DogsBannerViewController.swift */; };
 		AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */; };
 		AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A26324F543DE00DC5FF1 /* SceneDelegate.swift */; };
 		AE83A26B24F543E400DC5FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE83A26A24F543E400DC5FF1 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE2A8AAB24F800C7008B33F4 /* DogsBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsBannerViewController.swift; sourceTree = "<group>"; };
 		AE83A25E24F543DE00DC5FF1 /* MassiveViewContoller_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassiveViewContoller_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE83A26324F543DE00DC5FF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				AEB7E52724F5A44100249779 /* CollectionCell */,
 				AEB7E52224F5557400249779 /* TableCell */,
 				AEB7E51624F54F4100249779 /* HomeDogViewController.swift */,
+				AE2A8AAB24F800C7008B33F4 /* DogsBannerViewController.swift */,
 			);
 			path = HomeDog;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				AEB7E52924F5A46200249779 /* HomeDogCollectionViewCell.swift in Sources */,
 				AEB7E53424F64A7F00249779 /* UILabel+Extension.swift in Sources */,
 				AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */,
+				AE2A8AAC24F800C7008B33F4 /* DogsBannerViewController.swift in Sources */,
 				AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */,
 				AEB7E51A24F54FC300249779 /* HomeDog.swift in Sources */,
 				AEB7E53924F6838400249779 /* DataProvider.swift in Sources */,

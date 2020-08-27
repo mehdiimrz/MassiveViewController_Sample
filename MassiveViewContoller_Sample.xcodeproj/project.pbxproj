@@ -121,11 +121,11 @@
 		AEB7E51524F54F1900249779 /* HomeDog */ = {
 			isa = PBXGroup;
 			children = (
+				AEB7E51624F54F4100249779 /* HomeDogViewController.swift */,
+				AE2A8AAB24F800C7008B33F4 /* DogsBannerViewController.swift */,
 				AEEB183F24F699940024DFCA /* DogsListViewController.swift */,
 				AEB7E52724F5A44100249779 /* CollectionCell */,
 				AEB7E52224F5557400249779 /* TableCell */,
-				AEB7E51624F54F4100249779 /* HomeDogViewController.swift */,
-				AE2A8AAB24F800C7008B33F4 /* DogsBannerViewController.swift */,
 			);
 			path = HomeDog;
 			sourceTree = "<group>";

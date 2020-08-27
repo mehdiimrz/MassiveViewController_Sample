@@ -21,16 +21,3 @@ struct DetailDog : Decodable,Identifiable{
     let coverImage : String
 }
 
-
-extension Array where Element == DetailDog{
-    
-    func findRndom(count : Int) -> [Element]{
-        return self.pick(count)
-    }
-    
-    func findDogWithId(dogId : Int) -> Element?{
-        return self.filter{ $0.id == dogId }.first
-        
-    }
-    
-}

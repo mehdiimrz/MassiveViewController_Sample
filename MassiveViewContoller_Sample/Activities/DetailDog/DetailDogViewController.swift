@@ -9,14 +9,14 @@
 import UIKit
 
 final class DetailDogViewController: UIViewController {
-     
+    
     
     // MARK: Initializer
     let dog : DetailDog
     
     init(dogId : Int){
         self.dog = dataProvider.getDetailDogs()
-                               .findDogWithId(dogId: dogId)!
+            .findDogWithId(dogId: dogId)!
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -28,55 +28,61 @@ final class DetailDogViewController: UIViewController {
     let dataProvider = MockDataProvider()
     
     lazy var closeButton : UIButton = {
-          
-           let closeBtn = UIButton(type: UIButton.ButtonType.custom)
-           closeBtn.setImage(UIImage(named: "close"), for: .normal)
-           closeBtn.addTarget(self, action: #selector(closeAction), for: .touchUpInside)
-           closeBtn.translatesAutoresizingMaskIntoConstraints = false
-           return closeBtn
-           
-       }()
-       
-       lazy var scrollView : UIScrollView = {
-           
-          let scrollView = UIScrollView()
-           
-           
-           scrollView.translatesAutoresizingMaskIntoConstraints = false
-          return scrollView
-       }()
-       
-       
-       lazy var dogImage : UIImageView = {
-           let dogImage = UIImageView()
-           dogImage.image = UIImage(named: dog.coverImage)
-           dogImage.contentMode = .scaleAspectFill
-           dogImage.translatesAutoresizingMaskIntoConstraints = false
-           return dogImage
-       }()
-       
-       lazy var dogDescription : UILabel = {
-           let dogLable = UILabel()
-           dogLable.numberOfLines = 0
-           dogLable.font = UIFont(name: "Futura-Medium", size: 18)
-           dogLable.backgroundColor = UIColor(named: "LabelColor")
-           dogLable.text = dog.desc
-           dogLable.setLineHeight(lineHeight: 1.5)
-           dogLable.translatesAutoresizingMaskIntoConstraints = false
-           return dogLable
-           
-       }()
-       
-       lazy var mainStackView : UIStackView = {
-          
-           let stackView = UIStackView()
-           stackView.distribution = .fill
-           stackView.axis = .vertical
-           stackView.translatesAutoresizingMaskIntoConstraints = false
-           return stackView
-           
-       }()
-       
+        
+        let buttonImage = UIImage(named: "close")!
+        let tintedImage = buttonImage.withRenderingMode(.alwaysTemplate)
+        let closeBtn = UIButton(type: UIButton.ButtonType.custom)
+        closeBtn.setImage(tintedImage, for: .normal)
+        closeBtn.tintColor = .white
+        closeBtn.addTarget(self, action: #selector(closeAction), for: .touchUpInside)
+        let origImage = UIImage(named: "imageName")
+        
+        
+        closeBtn.translatesAutoresizingMaskIntoConstraints = false
+        return closeBtn
+        
+    }()
+    
+    lazy var scrollView : UIScrollView = {
+        
+        let scrollView = UIScrollView()
+        
+        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
+    
+    
+    lazy var dogImage : UIImageView = {
+        let dogImage = UIImageView()
+        dogImage.image = UIImage(named: dog.coverImage)
+        dogImage.contentMode = .scaleAspectFill
+        dogImage.translatesAutoresizingMaskIntoConstraints = false
+        return dogImage
+    }()
+    
+    lazy var dogDescription : UILabel = {
+        let dogLable = UILabel()
+        dogLable.numberOfLines = 0
+        dogLable.font = UIFont(name: "Futura-Medium", size: 18)
+        dogLable.backgroundColor = UIColor(named: "LabelColor")
+        dogLable.text = dog.desc
+        dogLable.setLineHeight(lineHeight: 1.5)
+        dogLable.translatesAutoresizingMaskIntoConstraints = false
+        return dogLable
+        
+    }()
+    
+    lazy var mainStackView : UIStackView = {
+        
+        let stackView = UIStackView()
+        stackView.distribution = .fill
+        stackView.axis = .vertical
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+        
+    }()
+    
     
     
     // MARK: View Life Cycle
@@ -108,7 +114,7 @@ extension DetailDogViewController {
         // ImageView
         mainStackView.addArrangedSubview(dogImage)
         dogImage.heightAnchor.constraint(equalToConstant: 300).isActive = true
-
+        
         
         // LabelView
         mainStackView.addArrangedSubview(dogDescription)
@@ -129,5 +135,5 @@ extension DetailDogViewController {
     @objc func closeAction() {
         self.dismiss(animated: true, completion: nil)
     }
-
+    
 }

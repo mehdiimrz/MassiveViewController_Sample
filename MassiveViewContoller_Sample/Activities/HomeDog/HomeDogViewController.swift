@@ -12,17 +12,25 @@ final class HomeDogViewController: UIViewController {
     
     // MARK: Properties
     
-    private var dogsData = [HomeDog](){
-        didSet{
-            dogsTable.reloadData()
-        }
-    }
+    private var dogsData = [HomeDog]()
     
-    private var bannerDogs = [DetailDog](){
-        didSet{
-            dogCollection.reloadData()
-        }
-    }
+    private var bannerDogs = [DetailDog]()
+    
+    weak var coordinator : HomeDogCoordinator?
+    
+    private lazy var dogsBanner : DogsBannerViewController = {
+       
+        let dogBannerVC = DogsBannerViewController(banners: self.bannerDogs)
+        add(dogBannerVC)
+        return dogBannerVC
+    }()
+    
+    private lazy var dogsList : DogsListViewController = {
+       
+        let dogListVC = DogsListViewController(dogs: self.dogsData)
+        add(dogListVC)
+        return dogListVC
+    }()
     
     private lazy var dogCollection : UICollectionView = {
         

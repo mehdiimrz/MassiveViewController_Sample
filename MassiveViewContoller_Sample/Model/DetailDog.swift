@@ -19,54 +19,6 @@ struct DetailDog : Decodable,Identifiable{
     let weight : String
     let lifeSpan : String
     let coverImage : String
-    
-    // Return all of the Dogs
-    private static func dogsDetails() throws -> [DetailDog]{
-        if let filepath = Bundle.main.path(forResource: "DogDetailJson", ofType: "json") {
-                   do {
-                       
-                       let fileUrl = URL(fileURLWithPath: filepath)
-                       let data = try Data(contentsOf: fileUrl)
-                       let jsonDecoder = JSONDecoder()
-                       jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-                       let dogs = try jsonDecoder.decode([DetailDog].self, from: data)
-                       return dogs
-                       
-                       
-                   } catch {
-                       throw error
-                   }
-               } else {
-                   throw NSError.init(domain: "File not found", code: 0, userInfo: nil)
-               }
-    }
-    
-    // Return a Dog with given ID
-    static func findDetail(dogId : Int) throws -> DetailDog{
-        do{
-            var dogs = try self.dogsDetails()
-            dogs = dogs.filter{ $0.id == dogId }
-            if let foundDog = dogs.first{
-                return foundDog
-            }else{
-                throw NSError.init(domain: "Dog not found", code: 0, userInfo: nil)
-            }
-            
-        } catch{
-            throw error
-        }
-    }
-    
-    // Return N random dogs
-    static func findRandomDogs(count : Int) throws -> [DetailDog]{
-           do{
-               let dogs = try self.dogsDetails()
-               return dogs.pick(count)
-               
-           } catch{
-               throw error
-           }
-       }
 }
 
 

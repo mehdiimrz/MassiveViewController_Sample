@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE2A8AAC24F800C7008B33F4 /* DogsBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8AAB24F800C7008B33F4 /* DogsBannerViewController.swift */; };
+		AE2A8AAE24F80334008B33F4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8AAD24F80334008B33F4 /* UIViewController+Extension.swift */; };
 		AE83A26224F543DE00DC5FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */; };
 		AE83A26424F543DE00DC5FF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A26324F543DE00DC5FF1 /* SceneDelegate.swift */; };
 		AE83A26B24F543E400DC5FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE83A26A24F543E400DC5FF1 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		AE2A8AAB24F800C7008B33F4 /* DogsBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsBannerViewController.swift; sourceTree = "<group>"; };
+		AE2A8AAD24F80334008B33F4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AE83A25E24F543DE00DC5FF1 /* MassiveViewContoller_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassiveViewContoller_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE83A26124F543DE00DC5FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE83A26324F543DE00DC5FF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				AEB7E51E24F5506D00249779 /* UIView+Extension.swift */,
 				AEB7E52C24F5ACDC00249779 /* Array+Extension.swift */,
 				AEB7E53324F64A7F00249779 /* UILabel+Extension.swift */,
+				AE2A8AAD24F80334008B33F4 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2A8AAE24F80334008B33F4 /* UIViewController+Extension.swift in Sources */,
 				AEB7E53D24F6846E00249779 /* MockDataProvider.swift in Sources */,
 				AEB7E53724F64B0000249779 /* DetailDogViewController.swift in Sources */,
 				AEB7E51F24F5506D00249779 /* UIView+Extension.swift in Sources */,
